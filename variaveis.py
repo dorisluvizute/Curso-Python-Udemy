@@ -27,4 +27,36 @@ print(type(minha_idade))
 print("Meu primeiro programa em Python")
 Num1 = 100
 Num2 = 350
-print("O resultado de",Num1,"+",Num2,"é:",Num1+Num2)
+print("O resultado de",Num1,"+",Num2,"é:",Num1 + Num2)
+
+# Variaveis do tipo Strings usar "aspas"
+# Variaveis do tipo string os sinais vão juntar as palavras sem espaço
+nome = "Dóris Andressa"
+print(type(nome))
+sobrenomeMãe = "Moura"
+sobrenomePai = "Luvizute"
+print(nome + sobrenomeMãe + sobrenomePai)
+
+# Para usar os sinais e ter espaço tenho que montar o código assim:
+print(nome + " " + sobrenomeMãe + " " + sobrenomePai)
+
+# As variaveis do tipo str * int repete a palavra com o número de vezes colocado:
+print(nome * 5)
+
+# Os sinais de - ou / não funcionam com srt
+# print(nome - D)
+
+# A função len mostra quantos caracteres tem uma variavel
+print(len(nome))
+print(len(sobrenomeMãe))
+
+# Para pegar o índice de cada caracter dentro de uma str
+print(sobrenomeMãe[0])
+print(sobrenomeMãe[1])
+print(sobrenomeMãe[2])
+print(sobrenomeMãe[3])
+print(sobrenomeMãe[4])
+
+# Para pegar o índice de cada caracter dentro de uma str de trás pra frente usamos números negativos
+print(sobrenomeMãe[-1])
+print(sobrenomeMãe[-2])
