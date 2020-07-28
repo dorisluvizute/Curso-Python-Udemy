@@ -7,7 +7,7 @@ git remote add origin https://github.com/dorisluvizute/teste.git
 # Clonar código de repositório já existente 
 git clone https://github.com/dorisluvizute/Curso-Python-Udemy.git
 
-# Incluir qualquer alteração feita no rastreio do GIT
+# Incluir qualquer alteração feita no rastreio da máquina
 git add .
 
 # Confirmar a alteração no código
