@@ -4,10 +4,13 @@ git init
 # Como associar minha máquina a uma repositório no github
 git remote add origin https://github.com/dorisluvizute/teste.git
 
-# Confirmar código para commit
+# Clonar código de repositório já existente 
+git clone https://github.com/dorisluvizute/Curso-Python-Udemy.git
+
+# Incluir qualquer alteração feita no rastreio do GIT
 git add .
 
-# Comitar código
+# Confirmar a alteração no código
 git commit -m"alteracao"
 
 # Jogar nova versão no repositório
