@@ -1,37 +1,5 @@
-def imc(peso, altura):
-    imc = peso / (altura * altura)
-    return(imc)
-
-def class_imc(sexo, peso, altura):
-    valor_imc = imc(peso,altura)
-    if sexo == 'masculino':
-        if valor_imc < 20.7:
-            return 'Abaixo do peso.'
-        elif 20.7 <= valor_imc < 26.4:
-            return 'No peso normal.'
-        elif 26.4 <= valor_imc < 27.8:
-            return 'Marginalmente acima do peso.'
-        elif 27.8 <= valor_imc < 31.1:
-            return 'Acima do peso ideal.'
-        elif valor_imc >= 31.1:
-            return 'Obesidade.'
-        else:
-            return 'Erro de cálculo.'
-    
-    elif sexo == 'feminino':
-        if valor_imc < 19.1:
-             return 'Abaixo do peso.'
-        elif 19.1 <= valor_imc < 25.8:
-            return 'No peso normal.'
-        elif 25.8 <= valor_imc < 27.3:
-            return 'Marginalmente acima do peso.'
-        elif 27.3 <= valor_imc < 32.3:
-            return 'Acima do peso ideal.'
-        elif valor_imc >= 32.3:
-            return 'Obesidade.'
-        else:
-            return 'Erro de cálculo.'  
-        
+import modulos
+# posso usar outro nome, como: "import modulo as m"
 
 valid = False
 valid2 = False
@@ -69,8 +37,9 @@ while valid3 == False:
     except:
         print("Escreva o valor com apenas números e separe com pontos.")
 
-v_imc = imc(peso, altura)
-c_imc = class_imc(sexo, peso, altura)
+v_imc = modulos.imc(peso, altura)
+c_imc = modulos.class_imc(sexo, peso, altura)
+# Se eu tivesse usado outro nome pro módulo colocaria: "m.imc"
 
 print('O seu IMC é:', v_imc)
 print('A sua classificação é:',c_imc)
