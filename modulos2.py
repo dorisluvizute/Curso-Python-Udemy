@@ -28,6 +28,7 @@ minuto = t.localtime().tm_min
 print('A transação foi feita às ' + str(hora) + 'h e ' + str(minuto) + 'min')
 
 print(t.perf_counter())
+# função que conta os segundos de uma ação
 
 def tempo():
     inicio = t.perf_counter()
@@ -37,4 +38,27 @@ def tempo():
     return 'Você escreveu seu nome em ' + str(contagem) + 'seg'
 # função round arredonda em quantos digitos a gnt quer
 
-print(tempo())
+# print(tempo())
+
+import random
+# função que pega numeros aleatórios
+
+print(random.randint(0,10))
+
+# exemplo de utilização do random.randint
+def megasena():
+    jogo = []
+    while len(jogo) < 6:
+        num = random.randint(1,60)
+        if num in jogo:
+            continue
+        else:
+            jogo.append(num)
+    return sorted(jogo)
+
+print(megasena())
+# função sorted ordena lista
+
+alunos = ['joão','pedro','maria','helena','guilherme']
+# função choice pede uma lista, uma sequência
+print(random.choice(alunos))
